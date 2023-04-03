@@ -139,8 +139,7 @@ class Ui_Tab2(object):
     def key_changed(self):
         txt =self.lineEdit.text()
         display =''
-        if txt == "":
-            self.key.clear()
+        self.key.clear()
         for x in txt:
             if x.isalpha():
                 x=x.upper()
